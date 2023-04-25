@@ -36,9 +36,6 @@ const Hero = () => {
                 <h3 className="mb-4 text-lg font-medium md:mb-6 md:text-xl">
                   {subTitle}
                 </h3>
-
-                <h1 className="text-9xl"> check change </h1>
-
                 <button className="bg-black px-6 py-1 lg:text-white">
                   {buttonText}
                 </button>
