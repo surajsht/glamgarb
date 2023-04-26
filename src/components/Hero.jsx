@@ -12,11 +12,11 @@ const Hero = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4500,
-    arrows: false
+    arrows: false,
   };
 
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className="mb-16">
       {BannerImage.map((banner) => {
         let { id, image, title, subTitle, buttonText } = banner;
 
@@ -33,7 +33,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-black opacity-40 lg:hidden"></div>
             <div className="absolute top-[50%] z-10 w-full translate-y-[-50%] text-white lg:text-black">
               <div className="lg:pr[400px] xl:pr[640px] container md:pr-[30%]">
-                <h2 className="mb-2 text-4xl font-extrabold md:mb-4 md:text-5xl lg:text-7xl">
+                <h2 className="mb-2 font-poppins text-4xl font-extrabold md:mb-4 md:text-5xl lg:text-7xl">
                   {title}
                 </h2>
                 <h3 className="mb-4 text-lg font-medium md:mb-6 md:text-xl">

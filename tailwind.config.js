@@ -8,7 +8,12 @@ export default {
       lg: "992px",
       xl: "1232px",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: "'Inter', sans-serif;",
+        poppins: "'Poppins', sans-serif;",
+      },
+    },
     container: {
       padding: {
         DEFAULT: "16px",

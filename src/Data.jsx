@@ -1,4 +1,4 @@
-export let BannerImage = [
+export const BannerImage = [
   {
     id: 0,
     image: "images/banner/banner-1.png",
@@ -29,5 +29,38 @@ export let BannerImage = [
     subTitle:
       "Revolutionize your shopping experience: Discover our online store and redefine convenience.",
     buttonText: "Shop Now",
+  },
+];
+
+export const categories = [
+  {
+    id: 0,
+    title: "Hoodie",
+    icon: "svg/hoodie.svg",
+  },
+  {
+    id: 1,
+    title: "Jeans",
+    icon: "svg/jeans.svg",
+  },
+  {
+    id: 2,
+    title: "Shirt",
+    icon: "svg/shirt.svg",
+  },
+  {
+    id: 3,
+    title: "Sweater",
+    icon: "svg/sweater.svg",
+  },
+  {
+    id: 4,
+    title: "Trouser",
+    icon: "svg/trouser.svg",
+  },
+  {
+    id: 5,
+    title: "T-shirt",
+    icon: "svg/tshirt.svg",
   },
 ];
