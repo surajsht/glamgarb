@@ -1,24 +1,27 @@
 import { BannerImage } from "../Data";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
-import "swiper/css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Hero = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 700,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4500,
+    arrows: false
+  };
+
   return (
-    <Swiper
-      className="w-full"
-      loop="true"
-      autoplay={{
-        delay: 4000,
-        disableOnInteraction: false,
-      }}
-      modules={[Autoplay]}
-    >
+    <Slider {...settings}>
       {BannerImage.map((banner) => {
         let { id, image, title, subTitle, buttonText } = banner;
 
         return (
-          <SwiperSlide
+          <div
             key={id}
             className="relative h-[384px] sm:h-[480px] lg:h-[560px] xl:h-[760px]"
           >
@@ -41,10 +44,10 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-          </SwiperSlide>
+          </div>
         );
       })}
-    </Swiper>
+    </Slider>
   );
 };
 
